@@ -694,6 +694,9 @@ window.__require = function e(t, n, r) {
         }
         return false;
       };
+      GameUtil.fixed = function(n) {
+        return Math.round(10 * n) / 10;
+      };
       return GameUtil;
     }();
     exports.default = GameUtil;
@@ -863,12 +866,15 @@ window.__require = function e(t, n, r) {
       value: true
     });
     var Enum_1 = require("../type/Enum");
+    var GameUtil_1 = require("../util/GameUtil");
     var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
     var OrientationManager = function(_super) {
       __extends(OrientationManager, _super);
       function OrientationManager() {
         var _this = null !== _super && _super.apply(this, arguments) || this;
         _this.handler = null;
+        _this.lastLon = null;
+        _this.lastLat = null;
         _this.orientation = Enum_1.MoveDirection.Down;
         return _this;
       }
@@ -878,7 +884,32 @@ window.__require = function e(t, n, r) {
         OrientationManager_1.instance.handler = this.UpdateOrientationData.bind(this);
       };
       OrientationManager.prototype.UpdateOrientationData = function(event) {
-        console.log(event);
+        var lon = 0;
+        var lat = 0;
+        if (cc.sys.isBrowser) {
+          if (cc.sys.os == cc.sys.OS_IOS) {
+            lon = event.alpha + event.gamma;
+            event.beta > 0 && (lat = event.beta - 90);
+          } else {
+            lon = event.alpha + event.gamma + 30;
+            lat = event.gamma > 90 ? 90 - event.beta : event.beta - 90;
+          }
+          lon %= 360;
+          lon < 0 && (lon += 360);
+          lon = GameUtil_1.default.fixed(lon);
+          lat = GameUtil_1.default.fixed(lat);
+          null == this.lastLon && (this.lastLon = lon);
+          var deltaLon = lon - this.lastLon;
+          deltaLon > 180 && (deltaLon -= 360);
+          deltaLon < -180 && (deltaLon += 360);
+          this.lastLon = lon;
+          null == this.lastLat && (this.lastLat = lat);
+          var deltaLat = lat - this.lastLat;
+          deltaLat > 180 && (deltaLat -= 360);
+          deltaLat < -180 && (deltaLat += 360);
+          this.lastLat = lat;
+          console.log("lon:" + lon + ",lat:" + lat + ",deltaLon:" + deltaLon + ",deltaLat:" + deltaLat);
+        }
       };
       OrientationManager.GetDir = function() {
         return this.instance.orientation;
@@ -894,7 +925,8 @@ window.__require = function e(t, n, r) {
     exports.default = OrientationManager;
     cc._RF.pop();
   }, {
-    "../type/Enum": "Enum"
+    "../type/Enum": "Enum",
+    "../util/GameUtil": "GameUtil"
   } ],
   PoolManager: [ function(require, module, exports) {
     "use strict";
