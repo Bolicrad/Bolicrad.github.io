@@ -748,6 +748,7 @@ window.__require = function e(t, n, r) {
         var _this = null !== _super && _super.apply(this, arguments) || this;
         _this.groups = null;
         _this.StartButton = null;
+        _this.Label = null;
         _this.dir = Enum_1.MoveDirection.Down;
         return _this;
       }
@@ -759,7 +760,10 @@ window.__require = function e(t, n, r) {
       };
       Game.prototype.openDeviceOrientation = function() {
         var _this = this;
-        if ("function" === typeof DeviceOrientationEvent.requestPermission) {
+        if (!DeviceOrientationEvent) {
+          this.Label.string = "This game provides better experience on mobile platform";
+          this.loadGame();
+        } else if ("function" === typeof DeviceOrientationEvent.requestPermission) {
           console.log("yes");
           DeviceOrientationEvent.requestPermission().then(function(permissionState) {
             console.log(permissionState);
@@ -779,6 +783,7 @@ window.__require = function e(t, n, r) {
       };
       __decorate([ property(cc.Node) ], Game.prototype, "groups", void 0);
       __decorate([ property(cc.Button) ], Game.prototype, "StartButton", void 0);
+      __decorate([ property(cc.Label) ], Game.prototype, "Label", void 0);
       Game = __decorate([ ccclass ], Game);
       return Game;
     }(cc.Component);
@@ -875,6 +880,7 @@ window.__require = function e(t, n, r) {
         _this.handler = null;
         _this.lastLon = null;
         _this.lastLat = null;
+        _this.lastOri = window.orientation;
         _this.orientation = Enum_1.MoveDirection.Down;
         return _this;
       }
@@ -882,6 +888,15 @@ window.__require = function e(t, n, r) {
       OrientationManager.prototype.onLoad = function() {
         OrientationManager_1.instance = this;
         OrientationManager_1.instance.handler = this.UpdateOrientationData.bind(this);
+        window.addEventListener("orientationchange", this.onOrientationChange);
+      };
+      OrientationManager.prototype.onOrientationChange = function(event) {
+        var deltaOri = window.orientation - this.lastOri;
+        deltaOri > 180 && (deltaOri -= 360);
+        deltaOri <= -180 && (deltaOri += 360);
+        this.lastOri = window.orientation;
+        console.log("\u672c\u6b21\u65cb\u8f6c\u89d2\u5ea6:" + deltaOri);
+        cc.Canvas.instance.node.angle += deltaOri;
       };
       OrientationManager.prototype.UpdateOrientationData = function(event) {
         var lon = 0;
@@ -1063,12 +1078,12 @@ window.__require = function e(t, n, r) {
       };
       var ResManager_1;
       ResManager.instance = null;
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Apple", void 0);
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Banana", void 0);
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Berry", void 0);
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Carrot", void 0);
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Orange", void 0);
-      __decorate([ property(cc.Node) ], ResManager.prototype, "Pear", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Apple", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Banana", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Berry", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Carrot", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Orange", void 0);
+      __decorate([ property(cc.JsonAsset) ], ResManager.prototype, "Pear", void 0);
       ResManager = ResManager_1 = __decorate([ ccclass ], ResManager);
       return ResManager;
     }(cc.Component);
@@ -1099,6 +1114,7 @@ window.__require = function e(t, n, r) {
             this._svgJSONFile = value;
             this.updateSVGObject();
             false;
+            this.scheduleOnce(this.drawAll, .1);
           },
           type: cc.JsonAsset
         },
@@ -3763,13 +3779,14 @@ window.__require = function e(t, n, r) {
         configurable: true
       });
       Tile.prototype.onLoad = function() {
-        this.sprite = this.getComponent("FBONodeTargetComponent");
+        this.sprite = this.getComponentInChildren("SVGComponent");
         this.bindTouchEvents();
       };
       Tile.prototype.onDestroy = function() {
         this.unbindTouchEvents();
       };
       Tile.prototype.reuse = function() {
+        this.sprite = this.getComponentInChildren("SVGComponent");
         this.bindTouchEvents();
       };
       Tile.prototype.unuse = function() {
@@ -3801,7 +3818,6 @@ window.__require = function e(t, n, r) {
       };
       Tile.prototype.init = function() {
         this._type = null;
-        this.sprite.target = null;
         this.setCoord(-1, -1);
         this.node.setScale(0);
       };
@@ -3810,19 +3826,18 @@ window.__require = function e(t, n, r) {
         this.updateDisplay();
       };
       Tile.prototype.updateDisplay = function() {
-        this.sprite.target = ResManager_1.default.getTileSpriteFrame(this._type);
+        this.sprite.svgJSONFile = ResManager_1.default.getTileSpriteFrame(this._type);
+        console.log(this.sprite.svgJSONFile);
       };
       Tile.prototype.setCoord = function(x, y) {
         this._coord || (this._coord = DataStructure_1.Coord());
         "number" === typeof x ? this._coord.set(x, y) : this._coord.set(x);
       };
       Tile.prototype.appear = function() {
-        cc.tween(this.node).to(.075, {
-          scaleX: 1.1,
-          scaleY: -1.1
+        cc.tween(this.node).to(.1, {}).to(.075, {
+          scale: 1.1
         }).to(.025, {
-          scale: 1,
-          scaleY: -1
+          scale: 1
         }).start();
       };
       Tile.prototype.disappear = function() {

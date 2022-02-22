@@ -3,18 +3,17 @@
     "uuids": [
         "02f75lezFF+ZTrpxI8VfrG",
         "0cKO8BX7ZH4oX2gx2uukJZ",
+        "0eZz/u3ulM/ZVkP8cHswPT",
         "29FYIk+N1GYaeWH/q1NxQO",
         "2d/fWJfRNMMr9vtr6A7GPY",
         "510N2iLvRL570Y2bXCXpos",
         "546pIOA/hG948RZJonOHQp",
         "71VhFCTINJM6/Ky3oX9nBT",
         "83ZwfPX6ZMr7K+YKOwKMNd",
-        "8eh7nIv2BLcqdEPXZMyAWS",
         "9bvaMerUlDyary99mJa6xp",
         "a1U5RdJRFMFL57BdJC9H1X",
         "a2PWZGlk9EwZEoWGB9EXhy",
         "b4P/PCArtIdIH38t6mlw8Y",
-        "c4WGZGLV5I0Kd/YpJcefkV",
         "d8HsitJHxOYqo801xBk8ev",
         "e8Ueib+qJEhL6mXAHdnwbi",
         "e97GVMl6JHh5Ml5qEDdSGa",
@@ -25,27 +24,19 @@
         "db://assets/prefabs/Icons.fire": "510N2iLvRL570Y2bXCXpos"
     },
     "redirect": [
-        "8eh7nIv2BLcqdEPXZMyAWS",
-        0,
         "a1U5RdJRFMFL57BdJC9H1X",
-        1,
+        0,
         "ecpdLyjvZBwrvm+cedCcQy",
-        1
+        0
     ],
     "deps": [
-        "resources",
         "internal"
     ],
     "packs": {
-        "053ef0d56": [
-            "71VhFCTINJM6/Ky3oX9nBT",
-            "b4P/PCArtIdIH38t6mlw8Y",
-            "d8HsitJHxOYqo801xBk8ev",
-            "e8Ueib+qJEhL6mXAHdnwbi"
-        ],
-        "06619a8cb": [
+        "02b868c65": [
             "02f75lezFF+ZTrpxI8VfrG",
             "0cKO8BX7ZH4oX2gx2uukJZ",
+            "0eZz/u3ulM/ZVkP8cHswPT",
             "29FYIk+N1GYaeWH/q1NxQO",
             "2d/fWJfRNMMr9vtr6A7GPY",
             "510N2iLvRL570Y2bXCXpos",
@@ -53,9 +44,14 @@
             "83ZwfPX6ZMr7K+YKOwKMNd",
             "9bvaMerUlDyary99mJa6xp",
             "a2PWZGlk9EwZEoWGB9EXhy",
-            "c4WGZGLV5I0Kd/YpJcefkV",
             "e97GVMl6JHh5Ml5qEDdSGa",
             "f0BIwQ8D5Ml7nTNQbh1YlS"
+        ],
+        "053ef0d56": [
+            "71VhFCTINJM6/Ky3oX9nBT",
+            "b4P/PCArtIdIH38t6mlw8Y",
+            "d8HsitJHxOYqo801xBk8ev",
+            "e8Ueib+qJEhL6mXAHdnwbi"
         ]
     },
     "name": "main",
@@ -66,10 +62,10 @@
     "encrypted": false,
     "versions": {
         "import": [
+            "02b868c65",
+            "54a53",
             "053ef0d56",
-            "56856",
-            "06619a8cb",
-            "4f662"
+            "56856"
         ],
         "native": [
             "71VhFCTINJM6/Ky3oX9nBT",
