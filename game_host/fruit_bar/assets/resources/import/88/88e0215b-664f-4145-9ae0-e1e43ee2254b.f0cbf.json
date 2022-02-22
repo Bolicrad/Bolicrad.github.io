@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "aezJ4bnxdJobZel0Lf729q"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Singing boy",
+      "rect": [
+        45,
+        0,
+        510,
+        600
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        600,
+        600
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
