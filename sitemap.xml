@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None./</loc>
+         <loc>None</loc>
          <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
-         
     </url>
 </urlset>
