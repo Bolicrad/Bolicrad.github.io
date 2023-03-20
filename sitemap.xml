@@ -9,6 +9,14 @@
          
     </url>
     <url>
+         <loc>NoneAbout/developer/</loc>
+         <lastmod>2023-03-20</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/developer/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/developer/"/>
+         
+    </url>
+    <url>
          <loc>NoneAbout/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
@@ -22,14 +30,6 @@
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/player/"/>
          <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/player/"/>
-         
-    </url>
-    <url>
-         <loc>NoneAbout/youth/</loc>
-         <lastmod>2023-03-20</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/youth/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/youth/"/>
          
     </url>
     <url>
