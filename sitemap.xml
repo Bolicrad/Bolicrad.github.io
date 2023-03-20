@@ -65,11 +65,19 @@
          
     </url>
     <url>
-         <loc>NonePortfolio/</loc>
+         <loc>NonePortfolio/A5/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A5/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A5/"/>
+         
+    </url>
+    <url>
+         <loc>NonePortfolio/_index/</loc>
+         <lastmod>2023-03-20</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/_index/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/_index/"/>
          
     </url>
 </urlset>
