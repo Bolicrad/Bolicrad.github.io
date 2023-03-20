@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>None./</loc>
+         <loc>https://bolicrad.github.io/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/"/>
          
     </url>
     <url>
-         <loc>NoneAbout/developer/</loc>
+         <loc>https://bolicrad.github.io/About/developer/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/developer/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/developer/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/About/developer/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/About/developer/"/>
          
     </url>
     <url>
-         <loc>NoneAbout/</loc>
+         <loc>https://bolicrad.github.io/About/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/About/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/About/"/>
          
     </url>
     <url>
-         <loc>NoneAbout/player/</loc>
+         <loc>https://bolicrad.github.io/About/player/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/About/player/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/About/player/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/About/player/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/About/player/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/M1/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M1/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M1/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/M2/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/Major/Bouncy/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M2/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M2/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/Major/Bouncy/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/Major/Bouncy/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/M3/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/Major/Haiku/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M3/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M3/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/Major/Haiku/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/Major/Haiku/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/M4/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/Major/Retrieve/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M4/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M4/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/Major/Retrieve/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/Major/Retrieve/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/M5/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/Major/Vacuum/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M5/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M5/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/Major/Vacuum/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/Major/Vacuum/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/</loc>
+         <loc>https://bolicrad.github.io/Portfolio/Major/WhaleFall/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://bolicrad.github.io/en/Portfolio/Major/WhaleFall/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://bolicrad.github.io/zh/Portfolio/Major/WhaleFall/"/>
          
     </url>
 </urlset>
