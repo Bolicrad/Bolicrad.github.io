@@ -33,51 +33,51 @@
          
     </url>
     <url>
-         <loc>NonePortfolio/A1/</loc>
+         <loc>NonePortfolio/M1/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A1/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A1/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M1/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M1/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/A2/</loc>
+         <loc>NonePortfolio/M2/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A2/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A2/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M2/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M2/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/A3/</loc>
+         <loc>NonePortfolio/M3/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A3/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A3/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M3/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M3/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/A4/</loc>
+         <loc>NonePortfolio/M4/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A4/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A4/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M4/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M4/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/A5/</loc>
+         <loc>NonePortfolio/M5/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/A5/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/A5/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/M5/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/M5/"/>
          
     </url>
     <url>
-         <loc>NonePortfolio/_index/</loc>
+         <loc>NonePortfolio/</loc>
          <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/_index/"/>
-         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/_index/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/Portfolio/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="Nonezh/Portfolio/"/>
          
     </url>
 </urlset>
