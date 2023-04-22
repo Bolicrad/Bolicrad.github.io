@@ -15,7 +15,7 @@
     
     
       
-        <title>Vacuum War - 游戏开发者 赵雷</title>
+        <title>吸尘器大战 - 游戏开发者 赵雷</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vacuum-war" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Vacuum War
+              吸尘器大战
             
           </span>
         </div>
@@ -522,7 +522,7 @@
   
     <li class="md-nav__item">
       <a href="../WhaleFall/" class="md-nav__link">
-        WhaleFall Haven
+        鲸落之港
       </a>
     </li>
   
@@ -545,12 +545,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Vacuum War
+          吸尘器大战
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Vacuum War
+        吸尘器大战
       </a>
       
         
@@ -569,15 +569,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demo-video" class="md-nav__link">
-    Demo Video
+  <a href="#_2" class="md-nav__link">
+    视频
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
+  <a href="#_3" class="md-nav__link">
+    简介
   </a>
   
 </li>
@@ -626,7 +626,7 @@
   
     <li class="md-nav__item">
       <a href="../Bouncy/" class="md-nav__link">
-        Bouncy Strike
+        弹球游戏
       </a>
     </li>
   
@@ -1004,15 +1004,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demo-video" class="md-nav__link">
-    Demo Video
+  <a href="#_2" class="md-nav__link">
+    视频
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
+  <a href="#_3" class="md-nav__link">
+    简介
   </a>
   
 </li>
@@ -1032,33 +1032,31 @@
                   
 
 
-<h1 id="vacuum-war">Vacuum War</h1>
+<h1 id="_1">吸尘器大战</h1>
 <table>
 <thead>
 <tr>
-<th align="center">Role</th>
-<th align="center">Period</th>
-<th align="center">Engine</th>
-<th align="center">Platform</th>
-<th align="center">Category</th>
+<th align="center">开发角色</th>
+<th align="center">开发周期</th>
+<th align="center">游戏引擎</th>
+<th align="center">平台</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">Hardware Engineer</td>
-<td align="center">Jan - May 2022</td>
+<td align="center">硬件工程师</td>
+<td align="center">2022年1月到5月</td>
 <td align="center">Unity</td>
 <td align="center">Oculous VR</td>
-<td align="center">Alt-Control</td>
 </tr>
 </tbody>
 </table>
-<h2 id="demo-video">Demo Video</h2>
+<h2 id="_2">视频</h2>
 <iframe width="100%" height="auto" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/mzTOntwLrVw" allowfullscreen></iframe>
 
-<h2 id="description">Description</h2>
-<p>This project is my EAE Project I course project (semster-long), developed under the topic of "Alternative Controllers". The Idea comes from the switchable heads of cleaning vacuums. The main gameplay is that you use physical vacuum-like controller to shoot in the VR space, with sometimes inhaling ammos with switchable heads. </p>
-<p>I majorly worked on the hardware engineering, developed the arduino codes for physical partition detection(via RFID), bluetooth communication between controller and game, and glue codes to parse information in the game. A team of 12 has made efforts on this game in this spring, and finally crafted a immersive and attractive virtual reality experience.</p>
+<h2 id="_3">简介</h2>
+<p>这个项目是我在EAE的学期项目，主题为Alternative Controllers（另类控制器，可以理解为除了游戏的软件，还要自己开发游戏的硬件）。这个项目的灵感来自于可以更换吸尘头的吸尘器，我们的设计师<a href="https://www.juncewang.com/zh">王俊策</a>以此提出了通过更换自制控制器的“头”来是游戏中射击的交互发生变化的玩法。游戏的主要玩法即是通过切换控制器上的物理部件来在射击模式和和吸入子弹模式之间切换。</p>
+<p>我对项目的主要贡献在于硬件开发。我开发了硬件控制器所需要用到的C代码，使得ESP32芯片可以感知到物理部件的更换。实现这一功能利用了MFRC522 RFID芯片，通过将两个芯片上的特定针脚连接起来，ESP32可以读取并处理附着的部件上内嵌的RFID标签信息，并通过蓝牙将信息传递给游戏。我还开发了游戏内处理蓝牙传入信息的胶水代码，给游戏逻辑提供了接口。整个项目一共有12人参与开发，最终呈现了一个沉浸而新奇的VR射击体验。</p>
 
 
 
@@ -1079,7 +1077,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../WhaleFall/" class="md-footer__link md-footer__link--prev" aria-label="上一页: WhaleFall Haven" rel="prev">
+        <a href="../WhaleFall/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 鲸落之港" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1088,7 +1086,7 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              WhaleFall Haven
+              鲸落之港
             </div>
           </div>
         </a>
